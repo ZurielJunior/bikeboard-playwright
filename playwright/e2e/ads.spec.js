@@ -58,7 +58,7 @@ test.describe("Cadastro de Anúncio", () => {
     await actions.submitAdForm()
 
     await expect(
-      page.locator("text=WhatsApp inválido (formato: 11999999999)")
+      page.locator("text=WhatsApp xxxx (formato: 11999999999)")
     ).toBeVisible()
   })
 
